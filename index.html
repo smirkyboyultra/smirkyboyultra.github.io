@@ -4,31 +4,49 @@
 		<link rel="icon"
 		  type="image/gif"
 		  href="https://media.giphy.com/media/uVt1XIg123q5eYXMsu/giphy.gif">
+		
 		<style>
-			body {
-		      background: url(https://media.giphy.com/media/X8b4dcsAMEJiARocUm/giphy.gif);
-              background-repeat: no-repeat;
-              background-size: cover;
-			}
+	    body {
+		 background: url(https://media.giphy.com/media/X8b4dcsAMEJiARocUm/giphy.gif);
+                 background-repeat: no-repeat;
+                 background-size: cover;
+	    }
 
-			.whitetext {
-				color: #fff;
+	    .whitetext {
+ 		 color: #ffffff;
             }
 
             .blackbackground {
-            	background-color: #000;
+            	 background-color: #000000;
             }
 
             p span {
-            	background-color: black;
+            	 background-color: black;
             }
 	   
 	    .charles {
-		position: fixed;
-		bottom: 0px;
-		right: 0px;
+		 position: fixed;
+	  	 bottom: 0px;
+		 right: 0px;
+	    }
+	    #nicss {
+		 background-color: #000000;
+		 position: fixed;
+		 top: 0px;
+		 left: 0px;
 	    }
 		</style>
+		<script>
+var loc = 0
+var looper = function() {
+	document.getElementById('nicss').style.top = loc
+	loc++
+	if(loc >= 1000) {
+		loc = 0	
+	}
+}
+setInterval(looper, 50)
+		</script>
 	</head>
 	<body>
 		<div class="whitetext">
@@ -39,9 +57,14 @@
 		 <br>
 		 <p><span>On an unrelated note, have you seen this man?</span></p>
 		 <img src="image/Have You Seen This Man..PNG" alt="haveyou?">
-	         <div class="charles">
-	         <img src="https://media.giphy.com/media/DkAg2gPUqsKAg/giphy.gif" alt="charles" height="42" width="42">
+		
+			<div class="charles">
+			 <img src="https://media.giphy.com/media/DkAg2gPUqsKAg/giphy.gif" alt="charles" height="42" width="42">
+			 </div>
 		 </div>
+		<div id="nicss">
+			<p><span>This is some of the most garbage CSS I've ever seen</span></p>
+			<p><span>-Anonymous</span></p>
 		</div>
 	</body>
 </html>
